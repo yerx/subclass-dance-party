@@ -11,9 +11,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 };
 
 makeDancer.prototype.step = function() {
-
-  var that = this;
-  // setTimeout(function() { that.step() }, this.timeBetweenSteps);
+  // setTimeout(() => this.step(), this.timeBetweenSteps); alternate soln/ no bind/ no var = this
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 }
 
@@ -29,7 +27,7 @@ makeDancer.prototype.setPosition = function(top, left) {
 makeDancer.prototype.lineUp = function(){
   var styleSettings = {
     left: 100,
-  };
+  }
   this.$node.css(styleSettings);
 };
 
