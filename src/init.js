@@ -23,16 +23,24 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer); // push dancers to global array
   });
 
-  $(".lineUpButton").on("click", function(event){
+  $('.lineUpButton').on('click', function(event) {
     window.dancers.forEach(dancer => dancer.lineUp());
+  });
+
+  $('.findPartnerButton').on('click', function(event) {
+    // var randomNumber = generate a random number using window.dancers.length
+
+    // iterate through the window.dancers
+
+
   });
 
 });

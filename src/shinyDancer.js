@@ -1,6 +1,6 @@
 var makeShinyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
-}
+};
 
 makeShinyDancer.prototype = Object.create(makeDancer.prototype);
 makeShinyDancer.prototype.constructor = makeShinyDancer;
@@ -10,4 +10,4 @@ makeShinyDancer.prototype.constructor = makeShinyDancer;
 makeShinyDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
   this.$node.toggle();
-}
+};

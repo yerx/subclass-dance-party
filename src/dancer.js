@@ -13,21 +13,21 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 makeDancer.prototype.step = function() {
   // setTimeout(() => this.step(), this.timeBetweenSteps); alternate soln/ no bind/ no var = this
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
-}
+};
 
 makeDancer.prototype.setPosition = function(top, left) {
 
   var styleSettings = {
     top: top,
     left: left
-  }
+  };
   this.$node.css(styleSettings);
-}
+};
 
-makeDancer.prototype.lineUp = function(){
+makeDancer.prototype.lineUp = function() {
   var styleSettings = {
     left: 100,
-  }
+  };
   this.$node.css(styleSettings);
 };
 
