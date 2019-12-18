@@ -29,7 +29,7 @@ body, a:link, a:visited, a:active{
 }
 
 .eagleElement{
-  position:relative;
+  position:absolute;
   animation: move-smooth 3s infinite;
 }
 @keyframes move-smooth{
