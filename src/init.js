@@ -35,13 +35,5 @@ $(document).ready(function() {
     window.dancers.forEach(dancer => dancer.lineUp());
   });
 
-  $('.findPartnerButton').on('click', function(event) {
-    // var randomNumber = generate a random number using window.dancers.length
-
-    // iterate through the window.dancers
-
-
-  });
-
 });
 

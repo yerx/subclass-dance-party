@@ -28,7 +28,23 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.awkwardDancer{
-  animation-name: bounce;
-  animation-timing-function: ease;
+/* .duckElement{
+  position:absolute;
+} */
+/* .purpleBird{
+    background: black;
+    animation: color-me-in 5s;
 }
+
+  @keyframes color-me-in {
+    0% {
+      background: orange;
+    }
+    100% {
+      background: black;
+    }
+  } */
+
+/* .duckElement{
+  position:absolute;
+} */

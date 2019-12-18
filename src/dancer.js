@@ -13,6 +13,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 makeDancer.prototype.step = function() {
   // setTimeout(() => this.step(), this.timeBetweenSteps); alternate soln/ no bind/ no var = this
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
+
 };
 
 makeDancer.prototype.setPosition = function(top, left) {
@@ -21,6 +22,8 @@ makeDancer.prototype.setPosition = function(top, left) {
     top: top,
     left: left
   };
+  // this.left = left;
+  // this.top = top;
   this.$node.css(styleSettings);
 };
 
@@ -30,6 +33,8 @@ makeDancer.prototype.lineUp = function() {
   };
   this.$node.css(styleSettings);
 };
+
+
 
 // var makeDancer = function(top, left, timeBetweenSteps) {
 
