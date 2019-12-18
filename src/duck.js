@@ -3,22 +3,24 @@ var makeAwkwardDancer = function(top, left, timeBetweenSteps) {
 
   this.$node = $('<span class="duckElement"><img class="duckGif" src="./images/ducks.gif" /></a></span>');
 
+  this.setPosition(top, left);
+
 };
 
 makeAwkwardDancer.prototype = Object.create(makeDancer.prototype);
 makeAwkwardDancer.prototype.constructor = makeAwkwardDancer;
 
 
-makeAwkwardDancer.prototype.step = function() {
-  makeDancer.prototype.step.call(this);
-  // this.$node.toggle();
+// makeAwkwardDancer.prototype.step = function() {
+//   makeDancer.prototype.step.call(this);
+//   // this.$node.toggle();
 
-};
+// };
 
-makeDancer.prototype.mouseOver = function() {
-  this.$node.toggleClass('duckElement');
-  // this.$node.toggleClass()
-};
+// makeDancer.prototype.mouseOver = function() {
+//   this.$node.toggleClass('duckElement');
+//   // this.$node.toggleClass()
+// };
 
 // makeAwkwardDancer.prototype.mouseover = function() {
 

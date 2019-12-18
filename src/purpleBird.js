@@ -1,21 +1,22 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
 
-  // this.positionForMate;
   this.$node = $('<span class="purpleBirdElement"><img style="height:100px" class="purpleBirdGif" src="./images/purpleBird.gif" /></span>'
   );
-  // this.$node.addClass('purpleBird');
+
+  this.setPosition(top, left);
+
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
-makeBlinkyDancer.prototype.step = function() {
-  makeDancer.prototype.step.call(this);
-  this.$node.slideToggle('slow');
-  // this.$node.animate({left: '200px'});
-  // this.findMate();
-};
+// makeBlinkyDancer.prototype.step = function() {
+//   makeDancer.prototype.step.call(this);
+//   this.$node.slideToggle('slow');
+//   // this.$node.animate({left: '200px'});
+//   // this.findMate();
+// };
 
 // find closest dancer to interact with
 // makeBlinkyDancer.prototype.findMate = function() {

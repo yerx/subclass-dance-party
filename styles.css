@@ -28,23 +28,41 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-/* .duckElement{
-  position:absolute;
-} */
-/* .purpleBird{
-    background: black;
-    animation: color-me-in 5s;
+.eagleElement{
+  position:relative;
+  animation: move-smooth 3s infinite;
+}
+@keyframes move-smooth{
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100;
+  }
 }
 
-  @keyframes color-me-in {
-    0% {
-      background: orange;
-    }
-    100% {
-      background: black;
-    }
-  } */
 
-/* .duckElement{
+.duckElement{
   position:absolute;
-} */
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100px); }
+}
+
+.purpleBirdElement{
+  position:absolute;
+
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(365deg);
+  }
+}
